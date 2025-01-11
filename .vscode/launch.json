@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AplicacionApplication",
+            "request": "launch",
+            "mainClass": "com.proyecto.aplicacion.AplicacionApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-AplicacionApplication<aplicacion>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -17,6 +24,16 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "com.proyecto.aplicacion.AplicacionApplication",
             "projectName": "com.proyecto-aplicacion",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-AplicacionApplication<aplicacion>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.fitzone.aplicacion.AplicacionApplication",
+            "projectName": "aplicacion",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
