@@ -1,0 +1,15 @@
+com\proyecto\servicios\ServicioResena.class
+com\proyecto\modelos\LoginUsuario.class
+com\proyecto\controladores\ControladorPerfil.class
+com\proyecto\servicios\ServicioLocalizaciones.class
+com\proyecto\modelos\Localizacion.class
+com\proyecto\modelos\Resena.class
+com\proyecto\repositorios\RepositorioUsuarios.class
+com\proyecto\controladores\ControladorUsuario.class
+com\proyecto\repositorios\RepositorioResena.class
+com\proyecto\controladores\ControladorLocalizaciones.class
+com\proyecto\servicios\ServiciosUsuarios.class
+com\proyecto\aplicacion\AplicacionApplication.class
+com\proyecto\controladores\ControladorResena.class
+com\proyecto\modelos\Usuario.class
+com\proyecto\repositorios\RepositorioLocalizaciones.class

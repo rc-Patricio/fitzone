@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: rgb(59,155,49);
+    background: linear-gradient(0deg, rgba(59,155,49,1) 0%, rgba(98,224,84,1) 66%);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #208317;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.collapse {
+    display: flex;
+    justify-content: end;
+    gap: 20px; /* Separar los enlaces */
+    font-size: 20px;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.container-fluid{
+    background-color: transparent;
+}
+
+.logo1{
+    position: absolute;
+    margin-top: 15px;
+    left: 0;
+    width: 180px;
+    height: 180px;
+}
+
+.logo2{
+    margin-left: 100px;
+}
+
+.container-portada {
+    margin-top: 60px;
+    width: 90%;
+    margin-left: 5%;
+    height: 500px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-portada img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Estilo del formulario en la portada */
+.container-portada form {
+    position: absolute;
+    top: 35%; /* Centra el formulario verticalmente */
+    left: 50%; /* Centra el formulario horizontalmente */
+    transform: translateX(-50%); /* Ajuste para centrar completamente */
+    width: 50%; /* Ancho del formulario */
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo ligeramente transparente */
+    z-index: 1;
+}
+
+.container-portada p {
+    position: absolute;
+    top: 70%;
+    width: 1500px;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para mejor visibilidad */
+}
+
+/* Links de Opciones */
+.opciones-links {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    margin-left: 200px;
+    margin-top: 40px;
+    font-size: 20px;
+    padding: 0;
+}
+
+.opciones-links a {
+    padding: 15px;
+    text-decoration: none;
+    color: lightgrey;
+    border-bottom: 2px solid lightgrey;
+    transition: color 0.3s, border-bottom-color 0.3s;
+}
+
+.opciones-links a:hover {
+    color: green;
+    border-bottom-color: green;
+}
+
+/* Carrusel y Tarjetas */
+.container-localizaciones {
+    margin-top: 50px;
+    margin-left: 5%;
+    max-width: 90%;
+    margin-bottom: 20px;
+}
+
+.card {
+    margin-top: 20px;
+    margin-left: 70px;
+    width: 18rem;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid black;
+    background-color: #f8f9fa;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 2);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Formularios y Botones */
+.form-control {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: green;
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.5);
+}
+
+.btn {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: darkgreen;
+}
+
+/* Footer */
+.footer {
+    background-color: #208317; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    padding: 15px 0;
+    height: 80px;
+    border-top: 2px solid #555; /* Línea decorativa */
+    text-align: center;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer .social-icons a {
+    font-size: 24px; /* Tamaño de los íconos */
+    color: white; /* Color inicial de los íconos */
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #00aced; /* Cambia de color al pasar el cursor (azul claro) */
+}
+
+.container-mapa{
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+
+.img-fluid{
+    border-radius: 10px;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+
+
+
+
+
