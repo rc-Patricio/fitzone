@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/detalleLocalizaciones.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+            integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+            crossorigin=""></script>
+    <title>Ubicacion</title>
+</head>
+<body>
+    <nav>
+
+    </nav>
+
+
+    <div class="row">
+        <!--TARJETAS-->
+        <div class="col-6">
+            <!--INFO SPOT-->
+            <div class="row infoLocalizacion">
+                <img class="col-6" src="'/imagenesLocalizaciones/' + ${localizacion.imagen}" style="background-color: blueviolet;"/>
+                <div class="col-6">
+                    <h1 th:text="${localizacion.nombre}"></h1>
+                    <span class="heading">User Rating</span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p>4.1 average based on 254 reviews.</p>
+
+                    <div class="row">
+                    <div class="side">
+                        <div>5 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-5"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>150</div>
+                    </div>
+                    <div class="side">
+                        <div>4 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-4"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>63</div>
+                    </div>
+                    <div class="side">
+                        <div>3 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-3"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>15</div>
+                    </div>
+                    <div class="side">
+                        <div>2 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-2"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>6</div>
+                    </div>
+                    <div class="side">
+                        <div>1 star</div>
+                    </div>
+                    <div class="middle">
+                        <div class="bar-container">
+                        <div class="bar-1"></div>
+                        </div>
+                    </div>
+                    <div class="side right">
+                        <div>20</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <p>Literalmente es mi casa</p>
+
+            <!--MAPA-->
+            <div id="map" class="mapa"></div>
+        </div>
+
+        <div class="col-6">
+            <!--REVIEWS SPOT-->
+            <!--AQUI POR CADA REVIEW ESTARA ESTO REPETIDO TH:EACH basicamente pato trabaja maricon atte pato-->
+            <div class="col-12 comentarioLocalizacion">
+                <ul>
+                    <li class="fa fa-star checked"></li>
+                    <li class="fa fa-star checked"></li>
+                    <li class="fa fa-star checked"></li>
+                    <li class="fa fa-star checked"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <h3>Que localizacion mas wena naa q decir 20 empanadas</h3>
+            </div>
+            <div class="col-12 comentarioLocalizacion">
+                <ul>
+                    <li class="fa fa-star checked"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                    <li class="fa fa-star"></li>
+                </ul>
+                <h3>nunca hay confort</h3>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row carruselLocalizacion">
+        <!--CARRUSEL IMAGENES LOCALIZACION-->
+        <button class="col-1 cambiaFoto"></button>
+        <img class="col-6" style="width:800px; height:800px; background-color: blueviolet;">
+        <button class="col-1 cambiaFoto"></button>
+    </div>
+
+
+    <footer>
+
+    </footer>
+    <script th:src="@{/js/index.js}"></script>
+</body>
+</html>
